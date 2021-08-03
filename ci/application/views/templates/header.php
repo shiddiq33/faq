@@ -316,10 +316,10 @@
                     </li>
 
                     <li>
-                        <a data-fancybox data-touch="false" data-close-existing="true" data-src="#login" href="javascript:;">Log In</a>
+                        <a data-fancybox data-touch="false" data-close-existing="true" data-src="#login" href="<?php echo site_url('login');?>">Log In</a>
                     </li>
                     <li>
-                        <span><a data-fancybox data-touch="false" data-close-existing="true" data-src="#signup" href="javascript:;" class="dx-btn dx-btn-md dx-btn-transparent">Sign Up</a></span>
+                        <span><a data-fancybox data-touch="false" data-close-existing="true" data-src="#signup" href="<?php echo site_url('signup');?>" class="dx-btn dx-btn-md dx-btn-transparent">Sign Up</a></span>
                     </li>
 
                 </ul>
