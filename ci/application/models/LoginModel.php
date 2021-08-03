@@ -9,12 +9,10 @@ class LoginModel extends CI_Model {
 	{
         parent::__construct();
 	}
- 
-
     public function doLogin($username, $password)
     {
 
-        $query = $this->db->get_where('users',array('username'=>$username, 'role'=>$role));
+        $query = $this->db->get_where('users',array('username'=>$username,));
         if($query->num_rows() > 0)
         {
             $data_user = $query->row();

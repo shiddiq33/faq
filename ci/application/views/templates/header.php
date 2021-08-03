@@ -585,7 +585,6 @@
 
                     </div>
                     <div class="col-12 col-md-4 col-lg-3 dx-feature-variable">
-
                         <div class="dx-feature dx-feature-3 dx-feature-color-2 dx-block-decorated">
                             <div class="dx-feature-icon">
                                 <span class="icon pe-7s-notebook"></span>
