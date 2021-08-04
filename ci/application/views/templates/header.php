@@ -13,6 +13,8 @@
     <meta name="keywords" content="helpdesk, forum, template, HTML template, responsive, clean">
     <meta name="author" content="nK">
 
+
+
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -316,10 +318,10 @@
                     </li>
 
                     <li>
-                        <a data-fancybox data-touch="false" data-close-existing="true" data-src="#login" href="<?php echo site_url('login');?>">Log In</a>
+                        <a data-fancybox data-touch="false" data-close-existing="true" data-src="#login" href="<?php echo site_url('login'); ?>">Log In</a>
                     </li>
                     <li>
-                        <span><a data-fancybox data-touch="false" data-close-existing="true" data-src="#signup" href="<?php echo site_url('signup');?>" class="dx-btn dx-btn-md dx-btn-transparent">Sign Up</a></span>
+                        <span><a data-fancybox data-touch="false" data-close-existing="true" data-src="#signup" href="<?php echo site_url('signup'); ?>" class="dx-btn dx-btn-md dx-btn-transparent">Sign Up</a></span>
                     </li>
 
                 </ul>
