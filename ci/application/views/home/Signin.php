@@ -32,7 +32,7 @@
 					</div>
 					<?php } ?>
 
-					<form class="form-signin" action="<?php echo base_url('index.php/auth/proses_register'); ?>"
+					<form class="form-signin" action="<?php echo base_url('index.php/Home/proses_register'); ?>"
 						method="post">
 
                         <div class="form-floating my-3">
