@@ -14,38 +14,37 @@
 	style="background-image: url('asset/vendor/images/GKP.jpg');background-repeat: no-repeat; background-attachment: fixed; background-position: center; ">
 	<div class="container">
 		<div class="row">
-            <div class="card position-absolute top-50 start-50 translate-middle" style="width: 400px;">
-						<div class="card-body rounded-3">
-							<h5 class="card-title text-center">Sign Up</h5>
-							<form class="form-signin" action="<?php echo base_url('index.php/auth/proses_register'); ?>"
-								method="post">
-								<div class="form-floating my-3">
-									<input type="email" class="form-control" id="floatingInput"
-										placeholder="name@example.com">
-									<label for="floatingInput">Email address</label>
-								</div>
-								<div class="form-floating mb-5" style= "margin-bottom : 50px;">
-									<input type="password" class="form-control" id="floatingPassword"
-										placeholder="Password">
-									<label for="floatingPassword">Password</label>
-								</div>
-
-                                <div class="form-floating my-3">
-									<input type="email" class="form-control" id="floatingInput"
-										placeholder="name@example.com">
-									<label for="floatingInput">Email address</label>
-								</div>
-
-                                <div class="form-floating my-3">
-									<input type="email" class="form-control" id="floatingInput"
-										placeholder="name@example.com">
-									<label for="floatingInput">Email address</label>
-								</div>
-
-                                
-								<button class="btn btn-primary col-md-1" type="submit">Signup</button>
-							</form>
+			<div class="card position-absolute top-50 start-50 translate-middle" style="width: 400px;">
+				<div class="card-body rounded-3">
+					<h5 class="card-title text-center">Login</h5>
+					<?php
+                $errors = $this->session->flashdata('errors');
+                if(!empty($errors)){
+                ?>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="alert alert-danger text-center">
+								<?php foreach($errors as $key=>$error){ ?>
+								<?php echo "$error<br>"; ?>
+								<?php } ?>
+							</div>
 						</div>
+					</div>
+					<?php } ?>
+					<form class="form-signin" action="<?php echo base_url('index.php/home/proses_login'); ?>"
+						method="post">
+						<div class="form-floating my-3">
+							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+							<label for="floatingInput">Email address</label>
+						</div>
+						<div class="form-floating mb-5" style="margin-bottom : 50px;">
+							<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+							<label for="floatingPassword">Password</label>
+						</div>
+
+						<button class="btn btn-primary col-md-1" type="submit">Signup</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
