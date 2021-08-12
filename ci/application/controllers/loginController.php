@@ -10,7 +10,6 @@ class Auth extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->library('session');
     }
-
 	public function login()
 	{
 		$this->load->view('auth/login');
