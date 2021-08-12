@@ -44,17 +44,17 @@
 							<label for="floatingInput">Email address</label>
 						</div>
 
-						<div class="form-floating mb-5" style="margin-bottom : 50px;">
+						<div class="form-floating mb-3">
 							<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
 							<label for="floatingPassword">Password</label>
 						</div>
 
-                        <div class="form-floating mb-5" style="margin-bottom : 50px;">
+                        <div class="form-floating mb-5">
 							<input type="password" class="form-control" id="floatingConfirmPassword" placeholder="ConfirmPassword">
 							<label for="floatingPassword">ConfirmPassword</label>
 						</div>
 
-						<button class="btn btn-primary col-md-1" type="submit">Signup</button>
+						<button class="btn btn-primary float-sm-end" type="submit">Signup</button>
 					</form>
 				</div>
 			</div>

@@ -42,7 +42,7 @@
 							<label for="floatingPassword">Password</label>
 						</div>
 
-						<button class="btn btn-primary col-md-1" type="submit">Signup</button>
+						<button class="btn btn-primary float-sm-end" type="submit">Login</button>
 					</form>
 				</div>
 			</div>
