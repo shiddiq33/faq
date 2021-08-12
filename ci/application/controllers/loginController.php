@@ -44,26 +44,7 @@ class Auth extends CI_Controller {
                 
             if($cek_login == FALSE)
             {
-                echo '<script>alert("Username yang Anda masukan salah.");window.location.href="'.base_url('/index.php/auth/login').'";</script>';
-            
-            } else {
-            
-                if(password_verify($pass, $cek_login->password)){
-                    // if the username and password is a match
-                    $this->session->set_userdata('id', $cek_login->id);
-                    $this->session->set_userdata('username', $cek_login->username);
-                    $this->session->set_userdata('name', $cek_login->name);
-                    
-                    redirect('/dashboard');
-                        
-                } else {
-                    echo '<script>alert("Username atau Password yang Anda masukan salah.");window.location.href="'.base_url('/index.php/auth/login').'";</script>';
-                }
-            }
-        }
-    }
-
-    public function proses_register()
+    public function index($nama = '')
     {
         $this->load->library('form_validation');
         $this->load->library('session');
