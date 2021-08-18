@@ -6,7 +6,7 @@ class UserController extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('home_model');
+        $this->load->model('UserModel');
         $this->load->library('form_validation');
         $this->load->library('session');
     }
@@ -39,7 +39,7 @@ class UserController extends CI_Controller {
             $username = htmlspecialchars($this->input->post('username'));
             $pass = htmlspecialchars($this->input->post('password'));
             // CEK KE DATABASE BERDASARKAN EMAIL
-            $cek_login = $this->home_model->cek_login($username); 
+            $cek_login = $this->UserModel->cek_login($username); 
                 
             if($cek_login == FALSE)
             {
@@ -84,7 +84,7 @@ class UserController extends CI_Controller {
                 'name' => $name,
                 'password' => $pass
             ];
-            $insert = $this->home_model->register("users", $data);
+            $insert = $this->UserModel->register("users", $data);
             if($insert){
                 echo '<script>alert("Sukses! Anda berhasil melakukan register. Silahkan login untuk mengakses data.");window.location.href="'.base_url('index.php/home/login').'";</script>';
             }
