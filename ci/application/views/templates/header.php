@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Amdesk | Help Center - How can we help you?</title>
-
     <meta name="description" content="Amdesk - Help Center HTML template for your digital products">
     <meta name="keywords" content="helpdesk, forum, template, HTML template, responsive, clean">
     <meta name="author" content="nK">
 
-
-
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- START: Styles -->
@@ -65,10 +57,6 @@
 
 
 <body>
-
-
-
-
     <!--
     START: Navbar
 
