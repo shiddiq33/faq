@@ -6,28 +6,20 @@ class UserController extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('KategoriModel');
+        $this->load->model('KategoriModel');//manggil model
         $this->load->library('form_validation');
         $this->load->library('session');
     }
 
 	public function tampilan_kategori()
 	{
-		$this->load->view('home/Kategori');
-    }
-
-    public function proses_kategori()
-    {
+		$this->load->view('form/Kategori');//nampilin view
 
     }
 
-    public function proses_register()
+    public function save()
     {
-        
-    }
-
-    public function logout()
-    {
-        
+          $data = $this->KategoriModel->save();//manggil fun save yang ada di model
+          echo json_encode($data);
     }
 }

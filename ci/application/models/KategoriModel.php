@@ -1,40 +1,19 @@
 <?php
 
-class KategoriModel extends CI_Model {
+defined('BASEPATH') or exit('No direct script access allowed');
 
-    protected $table = 'kategori';
-
-    public function __construct() {
-        parent::__construct();
+class KategoriModel extends CI_Model
+{
+    function tampil_data(){ 
+        return $this->db->get('kategori');// harus di ubah jadi tb_kategori
     }
 
-    public function get_all() {
-        return $this->db->get($this->table)
-                        ->result();
-    }
-
-    public function get_by_id($id) {
-        return $this->db->get_where($this->table, array('id' => $id))
-                        ->row();
-    }
-    
-    public function get_where($where) {
-        return $this->db->where($where)
-                        ->get($this->table)
-                        ->result();
-    }
-
-    public function insert($data) {
-        return $this->db->insert($this->table, $data);
-    }
-
-    public function update($id, $data) {
-        $this->db->where('id', $id);
-        $this->db->update($this->table, $data);
-    }
-
-    public function delete($id) {
-        $this->db->where('id', $id);
-        $this->db->delete($this->table);
+    public function save()
+    {
+        $data = [
+            "judul" => $this->input->post('judul', true), 
+            "nip" => $this->input->post('nip', true), //buat manggil trus yang satu lagi di disimpen dari nama fild
+        ];
+        return $this->db->insert('kategori', $data);//ngikut yang di komentar 8
     }
 }
