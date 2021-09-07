@@ -56,6 +56,7 @@
 </head>
 
 
+<<<<<<< HEAD
 <body>
     <!--
     START: Navbar
@@ -701,3 +702,6 @@
 
             </div>
         </div>
+=======
+<body>
+>>>>>>> 0efc5d035da1cfae81016165ed92da58abfd722f
