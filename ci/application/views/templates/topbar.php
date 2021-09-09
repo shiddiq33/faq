@@ -24,46 +24,8 @@
 
             <ul class="dx-nav dx-nav-align-left">
 
-                <li class="dx-drop-item">
-
-                    <ul class="dx-navbar-dropdown">
 
 
-                        <li>
-                            <a href="store.html">
-                                Store
-                            </a>
-                        </li>
-                        <li>
-                            <a href="product.html">
-                                Product
-                            </a>
-                        </li>
-                        <li>
-                            <a href="checkout.html">
-                                Checkout
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dx-drop-item">
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                    <ul class="dx-navbar-dropdown">
-
-                        <li>
-                            <a href="blog.html">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="single-post.html">
-                                Single Post
-                            </a>
-                        </li>
-                    </ul>
-                </li>
                 <li class="dx-drop-item active">
                     <a href="help-center.html">
                         Help Center
